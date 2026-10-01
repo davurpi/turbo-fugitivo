@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Turbo Fugitivo</title>
+<meta name="description" content="Persecuciones a toda velocidad: escapa de la policía, gana a la Lista Negra y juega online con un amigo.">
+<style>
+  :root { --naranja: #ff7a10; --fondo: #0b0b10; --texto: #f2f2f5; --gris: #a7a7b3; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--fondo); color: var(--texto); font-family: Impact, "Arial Black", Arial, sans-serif; }
+  header { padding: 48px 16px 24px; text-align: center; background: radial-gradient(ellipse at top, #3a1600 0%, var(--fondo) 70%); }
+  h1 { font-size: clamp(48px, 10vw, 110px); margin: 0; color: var(--naranja); letter-spacing: 2px; line-height: .95; }
+  .sub { font-family: Arial, sans-serif; color: var(--gris); font-size: 20px; margin: 14px 0 28px; }
+  .botones { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+  .boton { display: inline-block; padding: 18px 28px; background: var(--naranja); color: #111; text-decoration: none; font-size: 24px; border-radius: 6px; min-width: 260px; }
+  .boton.mac { background: #e9e9ee; }
+  .boton small { display: block; font-family: Arial, sans-serif; font-size: 13px; margin-top: 4px; }
+  main { max-width: 1100px; margin: 0 auto; padding: 16px; }
+  .capturas { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; margin: 24px 0; }
+  .capturas img { width: 100%; border-radius: 6px; border: 2px solid #222; }
+  h2 { color: var(--naranja); font-size: 34px; margin: 36px 0 10px; }
+  p, li { font-family: Arial, sans-serif; color: #ddd; font-size: 17px; line-height: 1.55; }
+  .nota { background: #16161f; border-left: 5px solid var(--naranja); padding: 12px 16px; border-radius: 4px; }
+  footer { text-align: center; color: #666; font-family: Arial, sans-serif; padding: 40px 16px; font-size: 14px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>TURBO<br>FUGITIVO</h1>
+  <p class="sub">Persecuciones a toda velocidad · Lista Negra · Online con un amigo</p>
+  <div class="botones">
+    <a class="boton" href="https://github.com/davurpi/turbo-fugitivo/releases/latest/download/TurboFugitivo-Windows.zip">⬇ WINDOWS<small>36 MB · descomprime y abre TurboFugitivo.exe</small></a>
+    <a class="boton mac" href="https://github.com/davurpi/turbo-fugitivo/releases/latest/download/TurboFugitivo-Mac.zip">⬇ MAC<small>63 MB · Apple Silicon e Intel</small></a>
+  </div>
+</header>
+<main>
+  <div class="capturas">
+    <img src="captura0.png" alt="Menú del juego">
+    <img src="captura1.png" alt="Conduciendo con nitro">
+    <img src="captura2.png" alt="Noche con lluvia">
+    <img src="captura3.png" alt="Carrera de la Lista Negra">
+  </div>
+
+  <h2>Qué hay</h2>
+  <ul>
+    <li><b>Persecuciones</b> con 5 niveles de calor, controles de policía, pinchos y helicóptero.</li>
+    <li><b>Lista Negra</b>: 5 rivales. Gánales una carrera y te quedas su coche.</li>
+    <li><b>Garaje</b>: 5 coches y mejoras de motor, frenos, nitro y neumáticos.</li>
+    <li><b>Noche con lluvia</b>, radio, cámara en 1ª persona con volante y relojes.</li>
+    <li><b>Multijugador</b>: pantalla partida en el mismo ordenador u <b>online</b> entre dos ordenadores (Windows y Mac).</li>
+    <li>Se juega con teclado (WASD o flechas), mando de consola o volante y pedales.</li>
+  </ul>
+
+  <h2>Jugar online</h2>
+  <p>En el menú, <b>ONLINE: CON OTRO ORDENADOR</b>. Uno pulsa <b>CREAR PARTIDA</b> y le sale un código de 4 letras; el otro lo escribe y pulsa <b>UNIRSE</b>.</p>
+
+  <h2>Instalar</h2>
+  <p><b>Windows:</b> descarga el ZIP, descomprímelo y abre <i>TurboFugitivo.exe</i>. Si Windows avisa de "aplicación desconocida", pulsa <i>Más información → Ejecutar de todas formas</i>.</p>
+  <p class="nota"><b>Mac:</b> descarga el ZIP y ábrelo. La primera vez, haz <b>clic derecho sobre "Turbo Fugitivo" → Abrir</b> y confirma (el juego no está firmado por Apple). Si aun así no deja, en <i>Ajustes del Sistema → Privacidad y seguridad</i> pulsa <i>Abrir igualmente</i>.</p>
+</main>
+<footer>Turbo Fugitivo · hecho con Godot</footer>
+</body>
+</html>
